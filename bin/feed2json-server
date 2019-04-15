@@ -4,8 +4,10 @@
 
 const feed2jsonServer = require('../lib/index.js');
 
+const PORT = process.env.PORT || 4201
+
 const server = feed2jsonServer({
-  port: 4201,
+  port: PORT,
   routes: { cors: true }
 });
 
